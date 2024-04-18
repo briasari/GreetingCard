@@ -33,6 +33,8 @@ namespace GreetingCard
 
         private void Form1_Click(object sender, EventArgs e)
         {
+            //bark noise plays x2
+
             Graphics g = this.CreateGraphics();
             Pen redPen = new Pen(Color.Red, 10); //colour, thickness (pixels)
             SolidBrush blackBrush = new SolidBrush(Color.Black);

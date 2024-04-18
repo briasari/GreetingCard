@@ -18,6 +18,8 @@ namespace GreetingCard
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
+            //frenchbulldog card (made of squares and lots of arcs
+
             Graphics g = this.CreateGraphics();
             Pen BlackPen = new Pen(Color.Black);
             Pen SilverPen = new Pen(Color.Silver, 11);

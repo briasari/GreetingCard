@@ -47,11 +47,43 @@ namespace GreetingCard
             g.DrawArc(WhitePen, 319, 397, 50, 50, 351, 111); //bottom two
 
             //dog shape
+            g.FillEllipse(WhiteBrush, 94, 188, 35, 90);
+            g.FillEllipse(WhiteBrush, 170, 188, 35, 90);
+            g.FillEllipse(WhiteBrush, 106, 193, 85, 35);
             g.FillEllipse(WhiteBrush, 97, 165, 35, 80);
             g.FillEllipse(SalmonBrush, 101, 169, 27, 65);
             g.FillEllipse(WhiteBrush, 167, 165, 35, 80);
             g.FillEllipse(SalmonBrush, 171, 169, 27, 65);
-            g.FillRectangle(WhiteBrush, 100, 200, 100, 150);
+            g.FillEllipse(WhiteBrush, 93, 258, 35, 95);
+            g.FillEllipse(WhiteBrush, 170, 259, 35, 95);
+            g.FillEllipse(WhiteBrush, 114, 350, 75, 30);
+            g.FillRectangle(WhiteBrush, 100, 200, 100, 170);
+
+            //left leg
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(335);
+            g.FillEllipse(WhiteBrush, -79, 86, 35, 72);
+            g.ResetTransform();
+
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(60);
+            g.FillEllipse(WhiteBrush, 140, 10, 25, 100);
+            g.ResetTransform();
+
+            //right leg
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(23);
+            g.FillEllipse(WhiteBrush, 130, 50, 35, 72);
+            g.ResetTransform();
+
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(300);
+            g.FillEllipse(WhiteBrush, -110, 100, 25, 100);
+            g.ResetTransform();
+
+            //front legs
+            g.FillEllipse(WhiteBrush, 110, 333, 25, 60);
+            g.FillEllipse(WhiteBrush, 168, 333, 25, 60);
 
             //dog collar
             g.DrawArc(ThickDarkPinkPen, 50, 180, 200, 100, 40, 101);
@@ -62,12 +94,28 @@ namespace GreetingCard
             g.TranslateTransform(100, 200);
             g.RotateTransform(345);
             g.FillEllipse(BlackBrush, 13, 25, 22, 15);
+            g.FillEllipse(WhiteBrush, 19, 32, 3, 3);
+            g.FillEllipse(WhiteBrush, 26, 30, 3, 3);
+            g.ResetTransform();
+
+            //left blush
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(345);
+            g.FillEllipse(LightPinkBrush, -9, 34, 17, 10);
             g.ResetTransform();
 
             //right eyeball
             g.TranslateTransform(100, 200);
             g.RotateTransform(15);
             g.FillEllipse(BlackBrush, 60, 0, 22, 15);
+            g.FillEllipse(WhiteBrush, 66, 4, 3, 3);
+            g.FillEllipse(WhiteBrush, 72, 7, 3, 3);
+            g.ResetTransform();
+
+            //left blush
+            g.TranslateTransform(100, 200);
+            g.RotateTransform(15);
+            g.FillEllipse(LightPinkBrush, 86, 10, 17, 10);
             g.ResetTransform();
 
             //mouth
@@ -75,6 +123,9 @@ namespace GreetingCard
             g.DrawArc(BlackPen, 111, 230, 35, 35, 0, 170);
             g.DrawArc(BlackPen, 148, 230, 35, 35, 372, 170);
 
+            //eyebrows
+            g.DrawArc(BlackPen, 165, 182, 35, 35, 80, 65);
+            g.DrawArc(BlackPen, 98, 182, 35, 35, 395, 65);
         }
 
         private void Form1_Click(object sender, EventArgs e)
